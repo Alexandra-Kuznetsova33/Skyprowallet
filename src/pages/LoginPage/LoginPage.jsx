@@ -68,14 +68,14 @@ export default function LoginPage() {
           <InputField
             type="email"
             placeholder="Email"
-            value={displayValue('email')}
+            value={fieldValues.email}
             onChange={(e) => handleChange('email', e.target.value)}
             $isError={showError && errors.email}
           />
           <InputField
             type="password"
             placeholder="Пароль"
-            value={displayValue('password')}
+            value={fieldValues.password}
             onChange={(e) => handleChange('password', e.target.value)}
             $isError={showError && errors.password}
           />
