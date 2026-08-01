@@ -70,21 +70,21 @@ export default function RegisterPage() {
           <InputField
             type="text"
             placeholder="Имя"
-            value={displayValue('name')}
+            value={fieldValues.name}
             onChange={(e) => handleChange('name', e.target.value)}
             $isError={showError && errors.name}
           />
           <InputField
             type="email"
             placeholder="Эл. почта"
-            value={displayValue('email')}
+            value={fieldValues.email}
             onChange={(e) => handleChange('email', e.target.value)}
             $isError={showError && errors.email}
           />
           <InputField
             type="password"
             placeholder="Пароль"
-            value={displayValue('password')}
+            value={fieldValues.password}
             onChange={(e) => handleChange('password', e.target.value)}
             $isError={showError && errors.password}
           />

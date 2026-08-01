@@ -34,6 +34,13 @@ export const Label = styled.label`
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+  &::after {
+    content: ' *';
+    color: #F25050;
+    font-size: 14px;
+    font-weight: 700;
+    display: ${props => props.$isError ? 'inline' : 'none'};
+  }
 `;
 
 export const StyledInput = styled.input`
@@ -53,15 +60,16 @@ export const StyledInput = styled.input`
   line-height: 15px;
   color: #000000;
   outline: none;
+  border-color: ${props => props.$isError ? '#F25050' : '#999999'};
+  background-color: ${props => props.$isError ? '#FFEBEB' : '#FFFFFF'};
 
   &::placeholder {
     color: #999999;
   }
 
-  &:focus,
-  &.valid {
-    border-color: #7334EA;
-    background-color: #F3EEFF;
+  &:focus {
+    border-color: ${props => props.$isError ? '#F25050' : '#7334EA'};
+    background-color: ${props => props.$isError ? '#FFEBEB' : '#F3EEFF'};
   }
 `;
 

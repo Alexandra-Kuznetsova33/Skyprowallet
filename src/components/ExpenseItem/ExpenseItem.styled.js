@@ -8,6 +8,10 @@ export const Row = styled.div`
   min-height: 15px;
   transition: background 0.2s;
   background: ${(props) => (props.$isHovered ? '#F4F0FF' : 'transparent')};
+  padding: 2px 8px;          
+  margin-left: -8px;        
+  margin-right: -8px;
+  box-sizing: content-box;
 `;
 
 export const Cell = styled.div`
