@@ -9,10 +9,10 @@ export const Nav = styled.div`
 
 export const NavLabel = styled.span`
   font-family: 'Montserrat', sans-serif;
-  font-weight: ${props => (props.isActive ? 600 : 400)};
+  font-weight: ${props => (props.$isActive ? 600 : 400)};
   font-size: 14px;
   line-height: 170%;
-  color: ${props => (props.isActive ? '#7334EA' : '#000000')};
+  color: ${props => (props.$isActive ? '#7334EA' : '#000000')};
   transition: color 0.2s, font-weight 0.2s;
 `;
 
