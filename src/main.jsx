@@ -8,7 +8,8 @@ import './App.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/Skyprowallet"
+  future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <AuthProvider>
         <ExpensesProvider>
           <App />
